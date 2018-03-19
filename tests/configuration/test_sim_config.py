@@ -8,7 +8,7 @@ except ImportError:
     import mock
 
 from lsst.sims.schedulerConfig import SimulationConfig
-from lsst.sims.ocs.utilities.socs_exceptions import NoProposalsConfiguredError
+from lsst.sims.schedulerConfig.utilities.socs_exceptions import NoProposalsConfiguredError
 from tests.helpers import CONFIG_COMM_PUT_CALLS, NUM_GEN_PROPS, NUM_SEQ_PROPS
 
 def create_file(i, directory=None, message=None):

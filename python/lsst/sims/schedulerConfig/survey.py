@@ -1,7 +1,7 @@
 import lsst.pex.config as pexConfig
 
 from lsst.sims.schedulerConfig import ScienceProposals
-from lsst.sims.utilities.constants import BASELINE_SURVEY_DURATION, DAYS_IN_YEAR
+from lsst.sims.schedulerConfig.utilities.constants import BASELINE_SURVEY_DURATION, DAYS_IN_YEAR
 
 __all__ = ["Survey"]
 
