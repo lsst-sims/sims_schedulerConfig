@@ -1,6 +1,6 @@
 import os
 
-from lsst.sims.ocs import __version__
+from lsst.sims.schedulerConfig import __version__
 
 __all__ = ["get_hostname", "get_user", "get_version"]
 
