@@ -79,7 +79,7 @@ class SimulationConfig(pexConfig.Config):
             return
         config_files = []
         for ifile in ifiles:
-            ifile = expand_path(ifile)
+            ifile = os.path.expanduser(os.path.expandvars(ifile))
             if os.path.isdir(ifile):
                 dfiles = os.listdir(ifile)
                 for dfile in dfiles:
