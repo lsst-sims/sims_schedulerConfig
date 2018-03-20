@@ -6,7 +6,7 @@ import lsst.pex.config as pexConfig
 
 from lsst.sims.schedulerConfig import load_config
 from lsst.sims.schedulerConfig.proposal import general_prop_reg, sequence_prop_reg
-from lsst.sims.utilities.socs_exceptions import NoProposalsConfiguredError
+from lsst.sims.schedulerConfig.utilities.socs_exceptions import NoProposalsConfiguredError
 
 __all__ = ["ScienceProposals"]
 

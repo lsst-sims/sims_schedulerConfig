@@ -6,7 +6,6 @@ import lsst.pex.config as pexConfig
 
 from lsst.sims.schedulerConfig import Downtime, Environment, load_config, Observatory, ObservingSite
 from lsst.sims.schedulerConfig import SchedulerDriver, ScienceProposals, Survey
-from lsst.sims.utilities import expand_path
 
 __all__ = ["SimulationConfig"]
 
@@ -79,7 +78,7 @@ class SimulationConfig(pexConfig.Config):
             return
         config_files = []
         for ifile in ifiles:
-            ifile = expand_path(ifile)
+            ifile = os.path.expanduser(os.path.expandvars(ifile))
             if os.path.isdir(ifile):
                 dfiles = os.listdir(ifile)
                 for dfile in dfiles:
